@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ccc;
+    padding: 10px;
+
+    display: flex;
+    /* flex-direction: row; DEFAULT VALUE */
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.item {
+    background-color: #f1425d;
+    padding: 40px;
+    margin: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.i2 {
+    height: 200px;
+    flex: 0 1 300px; /* grow, shrink, basis */
+}
+
+.i3 {
+    order: 1;
+    flex: 1;
+}
+
+.i4 {
+    order: -1;
+}
